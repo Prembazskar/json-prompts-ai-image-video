@@ -1,0 +1,102 @@
+{
+  "SCALE_Prompt": {
+    "SystemRole_S": {
+      "persona": "World-class Cultural Documentary Director and Culinary Video Prompt Engineer",
+      "objective": "Generate a detailed, scene-by-scene visual script and video-generation prompt sequence capturing Madurai's vibrant culture, iconic street food traditions, and community life.",
+      "tone": "Vibrant, evocative, cinematic, culturally authentic, and sensorially rich"
+    },
+    "Context_C": {
+      "location": "Madurai, Tamil Nadu, India",
+      "cultural_landmarks": [
+        "Meenakshi Amman Temple street market",
+        "Puthu Mandapam arcades",
+        "Vaigai riverfront at dawn"
+      ],
+      "people_and_lifestyle": [
+        "Jigarthanda vendors at bustling roadside stalls",
+        "Master parotta chefs (Parotta Masters) flipping dough with high-speed precision",
+        "Butter milk vendors frothing spiced buttermilk in traditional brass vessels",
+        "Flower sellers weaving jasmine (Madurai Malli) garlands",
+        "Locals sharing morning filter coffee and late-night street meals"
+      ],
+      "sensory_elements": {
+        "visuals": "Saffron, deep turmeric, bright white jasmine, glowing charcoal embers, golden-brown flaky parottas, cool earthen pots",
+        "audio": "Sizzling iron griddles, rhythm of twin metal scrapers hitting the tava, temple bells, frothing buttermilk poured from high angles",
+        "atmosphere": "Aroma of ghee and roasted spices, cool spiced buttermilk mist, warm neon night market energy"
+      }
+    },
+    "Actions_A": {
+      "video_concept": "Madurai: A Day in the Culinary Soul of Tamil Culture",
+      "deliverables": [
+        "Overview scene summary",
+        "Timed shot breakdown featuring expanded iconic food traditions",
+        "Prompt tags for AI video models (Runway Gen-3 / Luma Dream Machine / Sora)"
+      ],
+      "required_scenes": [
+        {
+          "scene_number": 1,
+          "time_of_day": "Dawn / Golden Hour",
+          "focus": "People & Heritage",
+          "description": "Slow-motion tracking shot of an elder in a traditional dhoti sipping steaming brass-cup filter coffee while a flower vendor weaves fresh jasmine nearby."
+        },
+        {
+          "scene_number": 2,
+          "time_of_day": "Midday Heat",
+          "focus": "Cooling Heritage Street Drink (Iyengar / Ayyangar Butter Milk Stall)",
+          "description": "Dynamic medium-close shot at a legendary Ayyangar Butter Milk stall. The vendor scoops thick, churned curd mixed with ice from a large traditional mud pot, pours spiced buttermilk with crushed green chilies, curry leaves, and mustard seed tempering between two brass tumblers from a high angle, producing a rich froth.",
+          "food_details": {
+            "dish_name": "Madurai Ayyangar / Iyengar Butter Milk (Mor)",
+            "key_visuals": "Frothy white buttermilk stream, flecks of fresh coriander, green chili, curry leaves, ginger, earthen pots, glistening dew on brass cups",
+            "technique": "High-distance pouring (aerating) creating a thick layer of natural foam"
+          }
+        },
+        {
+          "scene_number": 3,
+          "time_of_day": "Late Afternoon to Dusk",
+          "focus": "Iconic Street Beverage (Jigarthanda)",
+          "description": "Macro close-up shot of Madurai Famous Jigarthanda being assembled—layering almond gum (badam pisin), nannari syrup, sweetened condensed milk, and a crown scoop of basundi ice cream."
+        },
+        {
+          "scene_number": 4,
+          "time_of_day": "Bustling Evening Market",
+          "focus": "Madurai Culinary Landmark (Bun Parotta)",
+          "description": "Cinematic close-up and action shot at a roadside Madurai Bun Parotta stall. The Parotta Master swiftly stretches multi-layered dough, shapes it into fluffy bun-like rounds, and deep-fries/pan-sears them in generous ghee until dark golden and puffed. A dramatic tap shatters the crisp outer crust into soft, flaky layers before pairing with spicy salna curry.",
+          "food_details": {
+            "dish_name": "Madurai Bun Parotta",
+            "key_visuals": "Golden-brown dome-shaped parottas sizzling on flat tavas, steam rising, crispy golden shell shattering to reveal pillow-soft airy layers inside",
+            "technique": "Rhythmic slapping and kneading on marble tops, ghee frying, crushing by hand to fluff layers"
+          }
+        },
+        {
+          "scene_number": 5,
+          "time_of_day": "Night",
+          "focus": "Community & Temple Backdrop",
+          "description": "Wide shot of temple towers illuminated in the background as families gather under warm streetlights around food stalls, sharing Bun Parotta, Kari Dosa, and cold drinks."
+        }
+      ]
+    },
+    "Limitations_L": {
+      "visual_constraints": [
+        "Avoid stereotypical or staged exoticism; focus on candid, authentic human moments.",
+        "Ensure accurate cultural attire (silk sarees, cotton dhotis, sacred ash/vibhooti on foreheads).",
+        "Food styling must look genuinely hot, freshly made, and authentic to Madurai street side stalls without artificial color oversaturation."
+      ],
+      "technical_rules": [
+        "Aspect ratio: 16:9 cinematic widescreen",
+        "Frame rate: 24fps filmic pacing",
+        "Color grade: Warm Kodachrome cinematic tone with high shadow contrast and golden street-light glows"
+      ]
+    },
+    "ExecutionSchema_E": {
+      "output_format": "JSON",
+      "required_output_keys": [
+        "title",
+        "target_duration",
+        "scene_breakdown",
+        "food_specifications",
+        "text_to_video_prompts"
+      ],
+      "sample_prompt_generation_schema": {
+        "scene_id": "string",
+        "shot_type": "string (e.g., Close-up, Wide, Tracking, High-angle Macro)",
+        "ai
